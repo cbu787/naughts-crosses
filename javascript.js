@@ -30,9 +30,9 @@ $(document).on('ready', function () {
   $('td').on('click', function () {
 
     if (turn % 2 === 0) {
-      $(this).html("X").addClass("x");
+      $(this).html("X").addClass("x").css({"border-color": "white", "color": "white"});
     } else {
-      $(this).html("O").addClass("o");
+      $(this).html("O").addClass("o").css("color", "black");
     }
 
     $(this).off('click');
